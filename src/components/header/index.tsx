@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <div className="sm:fl flex h-28 w-full items-center justify-between md:h-36">
-        <div className="pl-2 md:pl-24 xl:pl-60">
+      <div className="sm:fl relative flex w-full items-center justify-between">
+        <div className="py-4 pl-2 md:pl-24 xl:pl-60">
           <Image
             src="/logo.webp"
             width={238}

@@ -29,16 +29,20 @@ export default function Dashboard() {
   }, []);
   return (
     <>
-      <div className="min-h-screen w-full bg-[url('/assets/images/background-1.svg')] bg-cover font-poppins">
+      <div className="min-h-screen w-full bg-[url('/assets/images/background-1.png')] bg-cover font-poppins">
+        <div className="absolute h-full w-full bg-black opacity-30"></div>
         <Header />
         <div
           className={`absolute top-[261px] flex w-full flex-col items-center justify-start ${startAnimation ? "animate-slide-up" : ""}`}
         >
           <div className="text-[24px] text-white lg:text-[40px]">
-            Mother Clucking Mining Checker
+            Mother Clucking Rune Claim
           </div>
-          <div className="mt-8 text-[22px] text-white lg:text-[32px]">
-            Enter your eligible address
+          <div className="mt-8 flex items-center text-[22px] text-white lg:text-[32px]">
+            <div>Enter your address used to mine Rune&nbsp;</div>
+            <div className="text-[14px] lg:text-[18px]">
+              (Mined Rune will be sent here)
+            </div>
           </div>
           <input
             className="mt-12 h-[89px] rounded-full bg-white px-10 text-2xl text-[#1E1E1E] placeholder-[#1E1E1E] outline-none lg:mt-4 lg:w-[600px] xl:w-[770px]"
